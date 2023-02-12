@@ -2,7 +2,7 @@ import numpy as np
 from InputParser import parseInput
 
 
-startMana,maxMana,turnsNumber,monsterToFace,monsterDesc,rewardList = parseInput("00-example.txt")
+startMana,maxMana,turnsNumber,monsterToFace,monsterDesc,rewardList = parseInput("./2022/00-example.txt")
 
 
 
