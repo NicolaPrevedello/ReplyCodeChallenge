@@ -19,10 +19,10 @@ def parseInput(fileName):
         for row in lines:
             print("Line {}: {}".format(cnt, row))
             if cnt == 0:
-                startMana = row[0]
-                maxMana = row[1]
-                turnsNumber = row[2]
-                monsterToFace = row[3]   
+                startMana = int(row[0])
+                maxMana = int(row[1])
+                totalRounds = int(row[2])
+                monsterToFace = int(row[3])   
 
             if cnt != 0:
                 monsterDesc[cnt-1, :]= row[0:4]
@@ -32,13 +32,11 @@ def parseInput(fileName):
 
     print("startMana: ", startMana)
     print("maxMana: ", maxMana)
-    print("turnsNumber: ", turnsNumber)
+    print("totalRounds: ", totalRounds)
     print("monsterToFace: ", monsterToFace)
     print("monsterDesc: ")
     print(monsterDesc)
     print("rewardList: ")
     print(rewardList)
 
-    #print("REWARD 11a MOSTRO 3: ", rewardList[2][10])
-
-    return startMana,maxMana,turnsNumber,monsterToFace,monsterDesc,rewardList
+    return startMana,maxMana,totalRounds,monsterToFace,monsterDesc,rewardList
