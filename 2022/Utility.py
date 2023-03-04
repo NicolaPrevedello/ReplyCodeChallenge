@@ -11,6 +11,8 @@ def scoreFunction(availableMonster, monsterDesc, rewardList, remainingRounds):
 
     #LA SOMMA DELLE REWARD NON BASTA A DEFINIRE LO SCORE... DA COMPLETARE
 
+    
+
     return rewardSumList
 
 
