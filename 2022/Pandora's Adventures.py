@@ -26,11 +26,11 @@ startStamina,maxStamina,totalRounds,monsterToFace,monsterDesc,rewardList = parse
 
 #Setting dei parametri globali (comuni per ogni iterazione)
 bestSolution = 0.0
-iteration = 0
+currentIteration = 0
 numIterazioni = 1000
 
 
-while iteration<numIterazioni:
+while currentIteration<numIterazioni:
 
     #Setting dei parametri locali (propri di ogni iterazione)
     stamina = np.full(totalRounds,startStamina)
@@ -85,14 +85,14 @@ while iteration<numIterazioni:
 
     #Calcolo il punteggio della soluzione attuale
     solutionScore = solutionFinalScore(actualSolution, rewardList)
-    print("ITERAZIONE {} PUNTEGGIO SOLUZIONE: {}".format(iteration, solutionScore))
+    print("ITERAZIONE {} PUNTEGGIO SOLUZIONE: {}".format(currentIteration, solutionScore))
 
     if(solutionScore>bestSolution):
         bestSolution = solutionScore
         #Viene salvata la soluzione migliore nel percorso ./2022/Solutions/$dataSetInTesting/soluzioneMigliore.txt
-        saveSolution(actualSolution, iteration, solutionScore, "./2022/Solutions/" + dataSetInTesting + "/")
+        saveSolution(actualSolution, currentIteration, solutionScore, "./2022/Solutions/" + dataSetInTesting + "/")
     
-    iteration += 1
+    currentIteration += 1
 
 print("BEST SOLUTION: ", bestSolution)
 
