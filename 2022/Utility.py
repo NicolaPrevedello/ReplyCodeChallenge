@@ -63,3 +63,11 @@ def checkStamina(stamina, maxStamina):
         finalStamina[np.argmax(finalStamina):] = maxStamina
     
     return finalStamina
+
+
+def print_in_a_frame(*words):
+    size = max(len(word) for word in words)
+    print('*' * (size + 8))
+    for word in words:
+        print('*' * 3 + ' {:<{}} ***'.format(word, size))
+    print('*' * (size + 8))
