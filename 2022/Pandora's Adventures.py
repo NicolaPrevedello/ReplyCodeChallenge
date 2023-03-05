@@ -3,6 +3,14 @@ import random
 from InputParser import parseInput
 from Utility import *
 
+
+'''
+PER POTER ESEGUIRE QUESTO FILE È NECESSARIO:
+    -SCEGLIERE IL DATASET DA ANALIZZARE
+    -IMPOSTARE IL NUMERO DI ITERAZIONI CHE SI DESIDERA ESEGUIRE
+    -UNA VOLTA FINITO LE SOLUZIONI TROVATE VERRANNO SALVAETE NEL PERCORSO: ./2022/Solutions/$dataSetInTesting/soluzioneMigliore.txt
+'''
+
 dataSet0 = "00-example"
 dataSet1 = "01-the-cloud-abyss"
 dataSet2 = "02-iot-island-of-terror"
