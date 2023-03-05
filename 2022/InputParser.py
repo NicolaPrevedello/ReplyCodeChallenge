@@ -19,7 +19,7 @@ def parseInput(fileName):
         cnt = 0
         for row in lines:
             row = list(filter(bool, row))
-            print("Line {}: {}".format(cnt, row))
+            #print("Line {}: {}".format(cnt, row))
             if cnt == 0:
                 startStamina = int(row[0])
                 maxStamina = int(row[1])
@@ -37,13 +37,13 @@ def parseInput(fileName):
 
             cnt += 1 
 
-    print("startStamina: ", startStamina)
-    print("maxStamina: ", maxStamina)
-    print("totalRounds: ", totalRounds)
-    print("monsterToFace: ", monsterToFace)
-    print("monsterDesc: ")
-    print(monsterDesc)
-    print("rewardList: ")
-    print(rewardList)
+    # print("startStamina: ", startStamina)
+    # print("maxStamina: ", maxStamina)
+    # print("totalRounds: ", totalRounds)
+    # print("monsterToFace: ", monsterToFace)
+    # print("monsterDesc: ")
+    # print(monsterDesc)
+    # print("rewardList: ")
+    # print(rewardList)
 
     return startStamina,maxStamina,totalRounds,monsterToFace,monsterDesc,rewardList

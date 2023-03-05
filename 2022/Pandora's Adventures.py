@@ -10,20 +10,22 @@ dataSet3 = "03-etheryum"
 dataSet4 = "04-the-desert-of-autonomous-machines"
 dataSet5 = "05-androids-armageddon"
 
-dataSetInTesting = dataSet1
+dataSetInTesting = dataSet0
 
 startStamina,maxStamina,totalRounds,monsterToFace,monsterDesc,rewardList = parseInput("./2022/" + dataSetInTesting + ".txt")
 
 
 #Inizio algoritmo
-stamina = np.full(totalRounds,startStamina)
-actualSolution = np.full(totalRounds, -1)
 bestSolution = 0.0
 iteration = 0
 numIterazioni = 1000
 
 
 while iteration<numIterazioni:
+
+    stamina = np.full(totalRounds,startStamina)
+    actualSolution = np.full(totalRounds, -1)
+
     for i in range(totalRounds):
 
         #Trovo i mostri che posso affrontare
@@ -73,6 +75,8 @@ while iteration<numIterazioni:
         saveSolution(actualSolution, iteration, solutionScore, "./2022/Solutions/" + dataSetInTesting + "/")
     
     iteration += 1
+
+print("BEST SOLUTION: ", bestSolution)
 
 
 
