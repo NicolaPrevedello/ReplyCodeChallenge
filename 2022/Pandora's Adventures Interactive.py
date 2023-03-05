@@ -32,9 +32,10 @@ print_in_a_frame("WELCOME IN PANDORA`S ADVENTURES")
 
 #Simulo ciascun round di ogni iterazione
 for i in range(totalRounds):
-
+    print("--------------------------------------------------------------------------------------------------------------------------------------------")
     print("ROUND {}:".format(i))
-    print("STAMINA {}".format(stamina[i]))
+    print("REWARD: ", solutionFinalScore(actualSolution[:i], rewardList))
+    print("STAMINA: {}".format(stamina[i]))
 
     if facedMonster <= monsterToFace:
         #Trovo i mostri che posso affrontare
@@ -78,6 +79,8 @@ for i in range(totalRounds):
 
 #Calcolo il punteggio della soluzione attuale
 solutionScore = solutionFinalScore(actualSolution, rewardList)
+
+print("--------------------------------------------------------------------------------------------------------------------------------------------")
 
 print("SOLUTION: ", solutionScore)
 
