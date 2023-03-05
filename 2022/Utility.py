@@ -71,3 +71,12 @@ def print_in_a_frame(*words):
     for word in words:
         print('*' * 3 + ' {:<{}} ***'.format(word, size))
     print('*' * (size + 8))
+
+
+def filterToOutputSolution(solution):
+    finalSolution = []
+    for num in solution:
+            if (num >= 0):
+                finalSolution.append(num)
+
+    return finalSolution

@@ -82,6 +82,8 @@ solutionScore = solutionFinalScore(actualSolution, rewardList)
 
 print("--------------------------------------------------------------------------------------------------------------------------------------------")
 
-print("SOLUTION: ", solutionScore)
+print("SOLUTION GIVEN: ", filterToOutputSolution(actualSolution))
+
+print("TOTAL REWARD: ", solutionScore)
 
 print_in_a_frame("END OF THE ADVENTURE")
