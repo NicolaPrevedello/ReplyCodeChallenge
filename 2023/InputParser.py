@@ -35,4 +35,4 @@ def parseInput(fileName):
 
             cnt += 1 
 
-    return rows,cols,snakesLentgths,ground
+    return rows,cols,snakes,snakesLentgths,ground
