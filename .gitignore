@@ -1,5 +1,10 @@
-./2022/__pycache__
-./2022/Solutions
-./2023/__pycache__
-./2023/Solutions
-./*.txt
+#Directories
+2022/__pycache__
+2022/Solutions
+2023/__pycache__
+2023/Solutions
+
+
+
+#Files
+*.txt
