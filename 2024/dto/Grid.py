@@ -1,12 +1,11 @@
 import numpy as np
 
-from GoldenPoints import GoldenPoint
 
 class Grid:
     def __init__(self, width, height):
         self.width = width
         self.height = height
-        self.grid = np.empty((height, width), dtype=object)
+        self.grid = np.zeros((int(height), int(width)), dtype=object)
 
     def __str__(self):
         return f"Grid: Width={self.width}, Height={self.height}"
