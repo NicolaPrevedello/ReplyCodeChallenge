@@ -3,8 +3,11 @@
 2022/Solutions
 2023/__pycache__
 2023/Solutions
+2024/__pycache__
+2024/Solutions
+venv
 
 
 
 #Files
-*.txt
+#*.txt
