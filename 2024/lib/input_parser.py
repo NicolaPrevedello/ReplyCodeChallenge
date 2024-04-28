@@ -40,15 +40,14 @@ def parse_input_file(filename):
       silver_points.append((x, y, score))
 
     # Lista di tiles
-    tiles = []
+    tiles = {}
     for _ in range(num_tile_types):
       line = f.readline().strip()
       tile_id, cost, availability = line.split()
-      tiles.append({
-          'id': tile_id,
+      tiles[tile_id] = {
           'cost': int(cost),
           'availability': int(availability)
-      })
+      }
 
   return (num_cols, num_rows, num_golden_points, num_silver_points, num_tile_types,
           golden_points, silver_points, tiles)
